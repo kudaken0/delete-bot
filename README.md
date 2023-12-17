@@ -14,3 +14,7 @@
 これでdiscord.pyのインストールが完了しました。
 ## botアカウント作成
 [こちら](https://discordpy.readthedocs.io/ja/latest/discord.html)の記事をご参照ください。
+## botに必要な権限
+- メッセージを送信(Send Message)
+- メッセージの管理(Manage Message)
+- アプリコマンドを使う(Use Slash Command)
