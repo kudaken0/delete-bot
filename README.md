@@ -9,8 +9,8 @@
 # 初期設定
 ※Pythonをインストールしている前提で説明します。
 ## discord.pyをインストール
-まず以下のコマンドを実行してdiscord.pyをインストールしてください。
-```pip install discord.py```
+まず以下のコマンドを実行してdiscord.pyをインストールしてください。  
+```pip install discord.py```  
 これでdiscord.pyのインストールが完了しました。
 ## botアカウント作成
 [こちら](https://discordpy.readthedocs.io/ja/latest/discord.html)の記事をご参照ください。
