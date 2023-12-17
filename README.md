@@ -11,7 +11,7 @@
 ## discord.pyをインストール
 まず以下のコマンドを実行してdiscord.pyをインストールしてください。  
 ```pip install discord.py```  
-これでdiscord.pyのインストールが完了しました。
+これでdiscord.pyのインストール完了です。
 ## botアカウント作成
 [こちら](https://discordpy.readthedocs.io/ja/latest/discord.html)の記事をご参照ください。
 ## botに必要な権限
