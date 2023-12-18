@@ -1,11 +1,4 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# delete-bot(メッセージ削除bot)
+# メッセージ削除bot
 # 目次
 - [delete-bot(メッセージ削除bot)](#delete-bot%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E5%89%8A%E9%99%A4bot)
 - [仕様](#%E4%BB%95%E6%A7%98)
