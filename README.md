@@ -1,6 +1,4 @@
-# メッセージ削除bot
 # 目次
-- [delete-bot(メッセージ削除bot)](#delete-bot%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E5%89%8A%E9%99%A4bot)
 - [仕様](#%E4%BB%95%E6%A7%98)
 - [初期設定](#%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A)
   - [discord.pyをインストール](#discordpy%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
