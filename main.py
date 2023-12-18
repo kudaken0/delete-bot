@@ -1,7 +1,8 @@
 import discord
 from discord import app_commands
+import time
 
-TOKEN = 'My token'
+TOKEN = 'my token'
 
 # 接続に必要なオブジェクトを生成
 intents = discord.Intents.default()
@@ -25,11 +26,16 @@ async def on_message(message):
     
 
 @tree.command(name="delete", description="メッセージを一括削除します")
-@app_commands.describe(number="数字を入力(例: 10)")
+@app_commands.describe(number="削除したいメッセージ数を入力(最大15まで※超えた場合15に設定します。)")
 async def purge(interaction: discord.integrations, number: int):
     channel = interaction.channel
     if channel:
-        progress_message = await interaction.response.send_message("メッセージを削除中...")
+        if number > 15:  # 数字が15を超える場合、15に設定する
+            number = 15
+            await interaction.response.send_message("制限を超えたので15に設定しました。(5秒後に開始します)")
+            time.sleep(5)
+        # メッセージを削除中の進捗状況を示すメッセージを送信
+        progress_message = await interaction.edit_original_response(content="メッセージを削除中...")
 
         # Botが削除する対象のメッセージを取得
         deleted = []
@@ -38,8 +44,6 @@ async def purge(interaction: discord.integrations, number: int):
 
         bot = interaction.client  # Botを取得する
         bot_user = await bot.fetch_user(bot.user.id)
-
-        bot_messages = [progress_message]  # 進行状況を示すメッセージを保持
 
         # 最初のメッセージは無視して、それ以降のメッセージを削除
         ignore_first = True
